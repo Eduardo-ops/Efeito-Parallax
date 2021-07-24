@@ -1,0 +1,105 @@
+/* CONFIGURAÇÃO PADRÃO */
+
+/* 
+Todo body e o html
+Deve-se conter o atributo de height em 100%, fazendo
+da lógica para o efeito parallax. 
+*/
+body,html{
+    margin: 0;
+    font: 16px  Verdana, sans-serif;
+    color: #777;
+    height: 100%;
+}
+
+/* Elemento com classe "conteudo" */
+.conteudo{
+    color: #777;
+    background-color: white;
+    text-align: justify;
+    padding: 50px 80px;
+}
+
+/* Elemento <h3> estilizado */
+h3{
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+
+/* Elemento <p> estilizado */
+P{
+    margin-bottom: 20px;
+}
+
+/* EFEITO PARALAX */
+
+/* Padronização dos elementos com essas classes */
+.caixa-1, .caixa-2, .caixa-3, .caixa-4, .caixa-5{
+    position: relative;
+    /* height: 100%; Sendo o correto a utilizar*/
+    /* Foi utilizado px devido ao tamanho da caixa a definir */
+    height: 853px;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Elemento com classe "caixa-1" */
+.caixa-1{
+    background-image: url(../imagens/imagem1.jpg);
+}
+
+/* Elemento com classe "caixa-2" */
+.caixa-2{
+    background-image: url(../imagens/imagem2.jpg);
+}
+
+/* Elemento com classe "caixa-3" */
+.caixa-3{
+    background-image: url(../imagens/imagem3.jpg);
+}
+
+/* Elemento com classe "caixa-4" */
+.caixa-4{
+    background-image: url(../imagens/imagem4.jpg);
+}
+
+/* Elemento com classe "caixa-5" */
+.caixa-5{
+    background-image: url(../imagens/imagem5.jpg);
+}
+
+/* Elemento com classe "titulo-conteudo" */
+.titulo-conteudo{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+/* Elemento <span> com classe "titulo" dentro de elemento com classe "titulo-conteudo" */
+.titulo-conteudo span.titulo{
+    background-color: #EE3B3B;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/* Elemento com id "rodape" */
+#rodape{
+    background: #000;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+/* Elemento com id "empresa-dev" */
+#empresa-dev{
+    font-size: 1em;
+}
